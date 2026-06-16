@@ -1,5 +1,5 @@
 import React from 'react'
-import section1 from './components/section1/section1'
+
 
 
 const App = () => {
