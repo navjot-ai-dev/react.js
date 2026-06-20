@@ -8,6 +8,9 @@ import Navbar from './component/navbar.jsx'
 import Footer from './component/footer.jsx'
 import Notfound from './pages/notfound.jsx'
 import Navbar2 from './component/navbar2.jsx'
+import Mens from './pages/mens.jsx'
+import Womens from './Womens.jsx'
+import Kids from './kids.jsx'
 const App = () => {
   return (
     <div className='h-screen w-screen relative bg-linear-to-r from-gray-900 to-gray-900'>
@@ -17,7 +20,11 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/contact/product' element={<Product />} />
+        <Route path='/product' element={<Product />} />
+        <Route path='/product/mens' element={<Mens />} />
+        <Route path='/product/kids' element={<Kids />} />
+        <Route path='/product/womens' element={<Womens />} />
+        <Route path='/product/:id' element={<Womens />} />
         <Route path='*' element={<Notfound />} />
       </Routes>
       
